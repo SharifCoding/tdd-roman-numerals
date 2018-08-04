@@ -1,33 +1,27 @@
-// CONSTRUCTOR FUNCTION
-class RomanNumeralGenerator {
-  constructor(number) {
-    this.number = number;
-  }
+const romanArray = [
+  // romanArray[i][0] reads number array
+  // romanArray[i][1] reads roman character
+  [40, 'XL'],
+  [10, 'X'],
+  [9, 'IX'],
+  [5, 'V'],
+  [4, 'IV'],
+  [1, 'I'],
+];
 
-  // OBJECTS PROTOTYPE
-  generate() {
-    if (this.number <= 0) return '';
-    if (this.number >= 10) {
-      this.number = this.number - 10;
-      return `X${this.generate(this.number)}`;
+class RomanNumeralGenerator {
+  constructor() { }
+
+  fromNumber(number) {
+    if (number === 0) return '';
+    for (let i = 0; i < romanArray.length; i += 1) {
+      if (number >= romanArray[i][0]) {
+        number = number - romanArray[i][0];
+        return romanArray[i][1] + this.fromNumber(number);
+      }
     }
-    if (this.number >= 9) {
-      this.number = this.number - 9;
-      return `IX${this.generate(this.number)}`;
-    }
-    if (this.number >= 5) {
-      this.number = this.number - 5;
-      return `V${this.generate(this.number)}`;
-    }
-    if (this.number >= 4) {
-      this.number = this.number - 4;
-      return `IV${this.generate(this.number)}`;
-    }
-    // if (this.number >= 1)
-    this.number = this.number - 1;
-    return `I${this.generate(this.number)}`;
+    return undefined;
   }
 }
 
-// EXPORTS FUNCTION
 export default RomanNumeralGenerator;
