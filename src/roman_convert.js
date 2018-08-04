@@ -6,19 +6,18 @@ class RomanNumeralGenerator {
 
   // OBJECTS PROTOTYPE
   generate() {
-    if (this.number === 5) {
-      return 'V';
+    if (this.number <= 0) return '';
+    if (this.number >= 5) {
+      this.number = this.number - 5;
+      return `V${this.generate(this.number)}`;
     }
-    if (this.number === 4) {
-      return 'IV';
+    if (this.number >= 4) {
+      this.number = this.number - 4;
+      return `IV${this.generate(this.number)}`;
     }
-    if (this.number === 3) {
-      return 'III';
-    }
-    if (this.number === 2) {
-      return 'II';
-    }
-    return 'I';
+    // if (this.number >= 1)
+    this.number = this.number - 1;
+    return `I${this.generate(this.number)}`;
   }
 }
 
