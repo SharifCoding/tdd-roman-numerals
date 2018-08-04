@@ -1,5 +1,5 @@
 # Coding Kata - Roman Numerals - TDD
-![](./img/generate9to49.png)
+![](./img/generateFinal.png)
 Creating a function that converts an integer to its Roman numeral equivalent using TDD (Test-driven Development) approach. Particularly interested in the following:
 - Code quality
 - Code readability
@@ -55,6 +55,8 @@ npm test
 <b>Fourth Commit:</b> The function now supports number value up to 39, test units divided for easier reading. May need to refactor the core function which is getting unnecessarily large, looking into other conditions, specifically `while` and `for` loops.
 
 <b>Fifth Commit:</b> Refactor the core function with `for` loops which will compare the input data with an array of numbers and then return roman character for each condition. Test Units also need adjustment to work with the revised function.
+
+<b>Fifth Commit:</b> Expanded both test units and core function to support Roman numeral up to 3999.
 
 ### Further Reading
 For an in-depth description of [Roman Numerals](http://en.wikipedia.org/wiki/Roman_numerals)
