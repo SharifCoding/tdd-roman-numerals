@@ -23,7 +23,7 @@ describe('constructor', () => {
 });
 
 // Checking the generate is up and running.
-describe('generate', () => {
+describe('generate >=0', () => {
   const roman = new RomanNumeralGenerator();
   // Edge cases, return 'null' if less than 1.
   it('returns \'null\' when invalid value is used', () => {
@@ -70,9 +70,34 @@ describe('generate', () => {
     roman.number = 8;
     expect(roman.generate()).toEqual('VIII');
   });
+});
+
+// Checking the generate is up and running.
+describe('generate >=9', () => {
+  const roman = new RomanNumeralGenerator();
   // Testing 'roman.generate' returns 'IX' when value is '9'.
-  xit('returns \'IX\' when value is \'9\'', () => {
+  it('returns \'IX\' when value is \'9\'', () => {
     roman.number = 9;
     expect(roman.generate()).toEqual('IX');
+  });
+  // Testing 'roman.generate' returns 'X' when value is '10'.
+  it('returns \'X\' when value is \'10\'', () => {
+    roman.number = 10;
+    expect(roman.generate()).toEqual('X');
+  });
+  // Testing 'roman.generate' returns 'XX' when value is '20'.
+  it('returns \'XX\' when value is \'20\'', () => {
+    roman.number = 20;
+    expect(roman.generate()).toEqual('XX');
+  });
+  // Testing 'roman.generate' returns 'XXXIX' when value is '39'.
+  it('returns \'XXXIX\' when value is \'39\'', () => {
+    roman.number = 39;
+    expect(roman.generate()).toEqual('XXXIX');
+  });
+  // Testing 'roman.generate' returns 'XL' when value is '40'.
+  xit('returns \'XL\' when value is \'40\'', () => {
+    roman.number = 40;
+    expect(roman.generate()).toEqual('XL');
   });
 });
