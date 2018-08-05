@@ -43,6 +43,8 @@ Navigate inside the folder and enter the following command on your terminal wind
 npm install
 # run the test
 npm test
+# run the app
+npm start
 ```
 
 ### Approach
@@ -56,7 +58,10 @@ npm test
 
 <b>Fifth Commit:</b> Refactor the core function with `for` loops which will compare the input data with an array of numbers and then return roman character for each condition. Test Units also need adjustment to work with the revised function.
 
-<b>Fifth Commit:</b> Expanded both test units and core function to support Roman numeral up to 3999.
+<b>Sixth Commit:</b> Expanded both test units and core function to support Roman numeral up to 3999.
+
+<b>Seventh Commit:</b> Added React test units and implemented basic frontend React.
 
 ### Further Reading
-For an in-depth description of [Roman Numerals](http://en.wikipedia.org/wiki/Roman_numerals)
+- [MathsIsFun - Roman Numerals](https://www.mathsisfun.com/roman-numerals.html)
+- [Wikipedia - Roman Numerals](http://en.wikipedia.org/wiki/Roman_numerals)
