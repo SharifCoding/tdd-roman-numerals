@@ -41,8 +41,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="container">
         <input
+          id="input"
           type="text"
           onChange={this.handleChange}
           value={this.state.query}
@@ -51,7 +52,9 @@ class App extends React.Component {
         <p>
           Roman Numeral Output:
           <br />
-          {this.fromNumber(this.state.query)}
+          <h1 id="result">
+            {this.fromNumber(this.state.query)}
+          </h1>
         </p>
       </div>
     );
