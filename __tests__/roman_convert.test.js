@@ -11,8 +11,17 @@ describe('constructor', () => {
   });
 });
 
+describe('unsupported numbers', () => {
+  it('returns \'Only support numbers between 1 and 3999\' when value less than \'0\'', () => {
+    expect(roman.fromNumber(-1)).toEqual('Only support numbers between 1 and 3999');
+  });
+  it('returns \'Only support numbers between 1 and 3999\' when value greater than \'4000\'', () => {
+    expect(roman.fromNumber(4000)).toEqual('Only support numbers between 1 and 3999');
+  });
+});
+
 describe('generate >=0', () => {
-  it('returns \'\' when invalid value is used', () => {
+  it('returns \'\' when \'0\' value is used', () => {
     expect(roman.fromNumber(0)).toEqual('');
   });
   it('returns \'I\' when value is \'1\'', () => {

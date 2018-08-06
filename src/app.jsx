@@ -1,5 +1,7 @@
 import React from 'react';
 
+import '../styles/app.css';
+
 const romanArray = [
   [1000, 'M'],
   [900, 'CM'],
@@ -42,20 +44,22 @@ class App extends React.Component {
   render() {
     return (
       <div id="container">
+        <img id="image" src={'https://www.mathsisfun.com/numbers/images/roman-1984.gif'} alt="logo" />
+        <br />
         <input
           id="input"
           type="text"
           onChange={this.handleChange}
           value={this.state.query}
-          placeholder="Enter decimal value"
+          placeholder="input arabic value"
         />
-        <p>
+        <div id="output">
           Roman Numeral Output:
           <br />
           <h1 id="result">
             {this.fromNumber(this.state.query)}
           </h1>
-        </p>
+        </div>
       </div>
     );
   }

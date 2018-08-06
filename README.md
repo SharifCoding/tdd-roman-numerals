@@ -1,5 +1,5 @@
-# Coding Kata - Roman Numerals - TDD
-![Jest Testing](./img/generateFinal.png)
+# Coding Kata - Roman Numerals - TDD - React
+![Final App](./img/animateApp.gif)
 Creating a function that converts an integer to its Roman numeral equivalent using TDD (Test-driven Development) approach. Particularly interested in the following:
 - Code quality
 - Code readability
@@ -28,10 +28,12 @@ Only support numbers between 1 and 3999 and see the following sample inputs and 
 20 = “XX”,
 3999 = “MMMCMXCIX”.
 ```
-
 #### Built with
 * [npm](https://www.npmjs.com/) - Node Package Manager
+* [React](https://www.npmjs.com/package/react) - An npm package to get you immediate access to React
+* [React DOM](https://www.npmjs.com/package/react-dom) - Entry point of the DOM-related rendering paths
 * [Jest](https://facebook.github.io/jest/) - JavaScript Testing Framework
+* [Enzyme](https://www.npmjs.com/package/react-test-renderer) - JavaScript Testing utilities for React
 * [Webpack](https://www.npmjs.com/package/webpack-dev-server) - Updates the browser on changes
 * [Babel](https://babeljs.io/) - Convert JSX syntax and strip out type annotations
 * [boilerplate](https://github.com/MCRcodes/react-bootstrap.git) - Frontend React Bootstrap
@@ -47,7 +49,13 @@ npm test
 # run the app
 npm start
 ```
+`npm start` will open [http://localhost:8080](http://localhost:8080) to view app in the browser. If you make any changes and save the changes process will automatically refresh and you will be able to see the results in the browser.
 
-### Further Reading
+If you want to end the process hold `control` and press `c` in mac, if you are not using mac hold `ctrl` and press `c`.
+
+#### Testing Outcome
+![Jest Testing](./img/generateFinal.png)
+
+#### Further Reading
 - [MathsIsFun - Roman Numerals](https://www.mathsisfun.com/roman-numerals.html)
 - [Wikipedia - Roman Numerals](http://en.wikipedia.org/wiki/Roman_numerals)

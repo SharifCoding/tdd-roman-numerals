@@ -21,6 +21,10 @@ describe('App component', () => {
     expect(wrapper.find('#container')).toHaveLength(1);
   });
 
+  it('should contain one #image ', () => {
+    expect(wrapper.find('#image')).toHaveLength(1);
+  });
+
   it('should contain one #input ', () => {
     expect(wrapper.find('#input')).toHaveLength(1);
   });
@@ -32,7 +36,7 @@ describe('App component', () => {
   });
 
   it('its renders paragraph \'Roman Numeral Output:\'', () => {
-    const title = wrapper.find('p').text();
+    const title = wrapper.find('#output').text();
     expect(title).toEqual('Roman Numeral Output:');
   });
 

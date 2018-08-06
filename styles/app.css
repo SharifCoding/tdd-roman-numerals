@@ -1,0 +1,17 @@
+#container {
+  text-align: center;
+}
+
+#input {
+  line-height: 20px;
+  font-size: 1em;
+  text-align: center;
+  margin: 1em 0em;
+}
+
+#result {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3em;
+}
+  
