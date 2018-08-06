@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "webpack-dev-server",
+    "build": "webpack",
+    "postinstall": "npm run build",
     "test": "jest"
   },
   "keywords": [
