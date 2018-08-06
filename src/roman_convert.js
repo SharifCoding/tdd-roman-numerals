@@ -20,12 +20,14 @@ class RomanNumeralGenerator {
   // Only support numbers between 1 and 3999
   // checkNumber(number) {
   //   if (typeof number !== 'number') return false;
-  //   if (number < 0 || number > 3999) return false;
+  //   if (number <= -1 || number >= 4000) return false;
   //   return true;
   // }
 
   fromNumber(number) {
-    if (number <= -1 || number >= 4000) return 'Only support numbers between 1 and 3999';
+    const invalidNumber = 'Only support numbers between 1 and 3999';
+    if (number <= -1 || number >= 4000) return invalidNumber;
+
     if (number === 0) return '';
     for (let i = 0; i < romanArray.length; i += 1) {
       if (number >= romanArray[i][0]) {

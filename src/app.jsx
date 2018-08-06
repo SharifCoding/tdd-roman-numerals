@@ -19,8 +19,8 @@ const romanArray = [
 ];
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = { query: '' };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -32,6 +32,9 @@ class App extends React.Component {
   }
 
   fromNumber(number) {
+    const invalidNumber = 'Only support numbers between 1 and 3999';
+    if (number <= -1 || number > 3999) return invalidNumber;
+
     if (number === 0) return '';
     for (let i = 0; i < romanArray.length; i += 1) {
       if (number >= romanArray[i][0]) {
@@ -49,6 +52,7 @@ class App extends React.Component {
         <input
           id="input"
           type="text"
+          maxLength="5"
           onChange={this.handleChange}
           value={this.state.query}
           placeholder="input arabic value"
