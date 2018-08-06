@@ -47,14 +47,14 @@ npm install
 # run the test
 npm test
 # run the app
-npm start
+npm run dev
 ```
 `npm start` will open [http://localhost:8080](http://localhost:8080) to view app in the browser. If you make any changes and save the changes process will automatically refresh and you will be able to see the results in the browser.
 
 If you want to end the process hold `control` and press `c` in mac, if you are not using mac hold `ctrl` and press `c`.
 
 #### Testing Outcome
-![Jest Testing](./img/generateFinal.png)
+![Jest Testing](./img/reactCompleteTest.png)
 
 #### Further Reading
 - [MathsIsFun - Roman Numerals](https://www.mathsisfun.com/roman-numerals.html)
