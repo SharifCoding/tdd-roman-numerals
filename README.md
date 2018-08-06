@@ -1,10 +1,11 @@
 # Coding Kata - Roman Numerals - TDD - React
-![Final App](./img/animateApp.gif)
-Creating a function that converts an integer to its Roman numeral equivalent using TDD (Test-driven Development) approach. Particularly interested in the following:
-- Code quality
-- Code readability
-- Testing (TDD approach)
+Creating a function that converts an integer to its Roman numeral equivalent using TDD (Test-driven Development) approach.
 
+<b>Heroku Link - https://react-roman-numerals.herokuapp.com/</b>
+
+![Final App](./img/animateApp.gif)
+
+#### Brief
 Write a class that implements the following interface (example given in Java/JavaScript):
 ```java
 public interface RomanNumeralGenerator {
