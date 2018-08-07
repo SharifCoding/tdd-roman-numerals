@@ -50,7 +50,7 @@ npm test
 # run the app
 npm run dev
 ```
-`npm start` will open [http://localhost:8080](http://localhost:8080) to view app in the browser. If you make any changes and save the changes process will automatically refresh and you will be able to see the results in the browser.
+`npm run dev` will open [http://localhost:8080](http://localhost:8080) to view app in the browser. If you make any changes and save the changes process will automatically refresh and you will be able to see the results in the browser.
 
 If you want to end the process hold `control` and press `c` in mac, if you are not using mac hold `ctrl` and press `c`.
 
